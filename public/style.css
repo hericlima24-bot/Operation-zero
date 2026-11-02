@@ -1,0 +1,25 @@
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#050b13;color:#eaf3ff;font-family:Arial,sans-serif}button,input,select{font:inherit;cursor:pointer}
+.hidden{display:none!important}
+.screen{min-height:100%;padding:20px;background:#091727;text-align:center}
+.hero h1{font-size:36px;color:#fff}.hero h1 span{color:#39a8ff}
+.panel{max-width:400px;margin:auto;padding:20px;background:rgba(8,20,34,0.95);border-radius:12px}
+.panel input,.panel select{width:100%;margin:10px 0;padding:12px;background:#071321;color:#fff;border:1px solid #244765;border-radius:6px}
+.primary{width:100%;background:#168bdc;border:0;padding:12px;color:#fff;font-weight:bold;border-radius:6px}
+.join-row{display:flex;gap:8px;margin-top:10px}
+.room-list{max-height:150px;overflow:auto;margin:10px 0}
+.room-item{display:flex;justify-content:space-between;padding:8px;background:#0b1b2b;margin-bottom:5px;border-radius:6px}
+#game{position:fixed;inset:0;background:#07111d}
+#gameCanvas{width:100%;height:100%;display:block}
+.hud-top,.hud-bottom{position:absolute;left:0;right:0;display:flex;justify-content:space-between;padding:10px;pointer-events:none}
+.hud-top{top:0;background:rgba(2,7,13,0.8)}
+.hud-bottom{bottom:0;background:rgba(2,7,13,0.8)}
+.hud-top button,.hud-bottom button{pointer-events:auto;padding:8px}
+.crosshair{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:20px;color:#fff;pointer-events:none}
+.mobile-controls{display:none}
+.chat{position:absolute;left:10px;bottom:50px;width:250px;pointer-events:auto}
+.chat form{display:flex;gap:5px}
+.chat input{flex:1;background:#071321;border:1px solid #31516e;color:#fff;padding:6px}
+.stick{position:absolute;left:20px;bottom:20px;width:100px;height:100px;border:2px solid rgba(204,234,255,0.4);border-radius:50%;background:rgba(7,19,33,0.4);touch-action:none}
+.stick div{position:absolute;left:30px;top:30px;width:36px;height:36px;border-radius:50%;background:rgba(88,186,255,0.6)}
+.mobile-actions{position:absolute;right:20px;bottom:30px;display:flex;flex-direction:column;gap:8px}
+@media(max-width:700px){.mobile-controls{display:block}}
